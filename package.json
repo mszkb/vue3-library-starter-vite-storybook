@@ -1,6 +1,6 @@
 {
-  "name": "vue3-comp-lib-starter",
-  "version": "0.1.0",
+  "name": "vue3-library-starter-vite-storybook",
+  "version": "0.1.2",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -8,6 +8,14 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "main": "./src/lib-components/index.ts",
+  "module": "./dist/vue3-library-starter-vite-storybook.es.js",
+  "types": "./types/index.d.ts",
+  "files": [    
+    "src",
+    "dist",
+    "types"
+  ],
   "dependencies": {
     "vue": "^3.2.16"
   },
