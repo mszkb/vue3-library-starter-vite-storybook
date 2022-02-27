@@ -10,13 +10,12 @@ describe('HelloWorld', () => {
 
     expect(wrapper.find('h1').text()).toEqual(msg)
   })
-})
-
-describe('Stories Button', () => {
   it('should display header text', () => {
     const msg = 'TestComponent'
     const wrapper = mount(MyButton, { props: { label: msg } })
 
-    expect(1).toBe(1);
+    expect(wrapper.find('button').text()).toEqual(msg)
+
+    expect(1).toBe(1)
   })
 })
