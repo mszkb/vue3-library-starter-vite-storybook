@@ -2,13 +2,13 @@
   <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
 </template>
 
-<script>
-import './button.css';
+<script lang="ts">
+// import './button.css';
 import { reactive, computed } from 'vue';
+import { defineComponent } from "vue";
 
-export default {
+export default defineComponent({
   name: 'my-button',
-
   props: {
     label: {
       type: String,
@@ -28,25 +28,5 @@ export default {
       type: String,
     },
   },
-
-  emits: ['click'],
-
-  setup(props, { emit }) {
-    props = reactive(props);
-    return {
-      classes: computed(() => ({
-        'storybook-button': true,
-        'storybook-button--primary': props.primary,
-        'storybook-button--secondary': !props.primary,
-        [`storybook-button--${props.size || 'medium'}`]: true,
-      })),
-      style: computed(() => ({
-        backgroundColor: props.backgroundColor,
-      })),
-      onClick() {
-        emit('click');
-      }
-    }
-  },
-};
+});
 </script>

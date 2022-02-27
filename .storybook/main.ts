@@ -9,6 +9,7 @@ module.exports = {
     },
     '@storybook/addon-links',
     '@storybook/addon-storysource',
+    '@storybook/addon-jest'
   ],
   core: {
     builder: 'webpack5'
