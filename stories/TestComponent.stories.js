@@ -1,4 +1,4 @@
-import TestComponent from '@/lib-components/TestComponent';
+import TestComponent from '@/lib-components/TestComponent/TestComponent.vue';
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
