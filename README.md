@@ -17,3 +17,8 @@ in the standard components. So the submodule strategy is ideal.
 5) Do ```yarn install```
 
 Read more about this approach here: https://blog.nrwl.io/dev-workflow-using-git-submodules-and-yarn-workspaces-14fd06c07964
+
+## E2E / Acceptance testing
+
+For Acceptance and E2E testing we use cypress + cucumber. As cypress is a big package we excluded it from the main
+package.json. To install cypress got to ```./tests/e2e``` and do ```yarn install```
