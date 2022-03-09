@@ -5,7 +5,7 @@ import MyButton from '../../stories/Button.vue'
 
 describe('HelloWorld', () => {
   it('should display header text', () => {
-    const msg = 'TestComponent'
+    const msg = 'TestComponent with 1'
     const wrapper = mount(TestComponent, { props: { msg } })
 
     expect(wrapper.find('h1').text()).toEqual(msg)

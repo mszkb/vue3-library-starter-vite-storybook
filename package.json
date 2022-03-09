@@ -1,6 +1,7 @@
 {
   "name": "vue3-library-starter-vite-storybook",
   "version": "0.1.3",
+  "license": "ISC",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",

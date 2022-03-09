@@ -1,12 +1,19 @@
 # Vue3 Component Library Starter using Typescript + Vite + Storybook
 
 This template should help get you started developing a Vue 3 component library.
+It includes Typescript support, Storybook integration, Jest & Cypress preconfigured and Vite as the build tool.
 
-more soon
-## Recommended IDE Setup
+## Developing along with other projects
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+Prerequisites: Yarn 1.22.17
 
-## Type Support For `.vue` Imports in TS
+This repo is meant as a submodule for your other projects. As you work on your project you will also make many changes
+in the standard components. So the submodule strategy is ideal.
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+1) Put your frontend code of your project in a separate folder
+2) Initialize git submodules ```git submodule init```
+3) Add this project as a submodule ```git submodule add https://github.com/myname/myrepo```
+4) Setup yarn workspaces with two packages: your app and the submodule
+5) Do ```yarn install```
+
+Read more about this approach here: https://blog.nrwl.io/dev-workflow-using-git-submodules-and-yarn-workspaces-14fd06c07964
